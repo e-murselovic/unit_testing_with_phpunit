@@ -9,17 +9,18 @@
 5. Setup autoload within `composer.json` by using following:
     ```
     ...
+
     "autoload": {
         "psr-4": {
             "App\\" : "app"
         }
     }
+    
     ...
     ```
 6. Run command for autoloading `composer dump-autoload -o`
 7. Setup PHPUnit configuration by creating `phpunit.xml` file
     ```
-    ...
     <?xml version="1.0" encoding="UTF-8"?>
         <phpunit bootstrap="vendor/autoload.php"
                 colors="true"
@@ -32,5 +33,4 @@
                 </testsuite>
             </testsuites>
         </phpunit>
-        ...
     ```
