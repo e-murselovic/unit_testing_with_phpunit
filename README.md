@@ -1,5 +1,3 @@
-# unit_testing_with_phpunit
-
 # Setting up PHPUnit
 
 1. Install PHPUnit using following command `composer require phpunit/phpunit`
@@ -15,7 +13,6 @@
             "App\\" : "app"
         }
     }
-    
     ...
     ```
 6. Run command for autoloading `composer dump-autoload -o`
